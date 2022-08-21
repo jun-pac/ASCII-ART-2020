@@ -47,6 +47,12 @@ parser.add_argument(
     type=int,
     help="Output width and height",
 )
+parser.add_argument(
+    "--threshold",
+    default=0.85,
+    type=float,
+    help="Threshold for theme color",
+)
 
 args = parser.parse_args()
 
@@ -99,7 +105,7 @@ for i in range(h):
     x.append(j)
     y.append(h-1-i)
     bright=(nIMG[i][j][0]/256+nIMG[i][j][1]/256+nIMG[i][j][2]/256)/3
-    if inner_product((int(nIMG[i][j][0]),int(nIMG[i][j][1]),int(nIMG[i][j][2])))>0.85:
+    if inner_product((int(nIMG[i][j][0]),int(nIMG[i][j][1]),int(nIMG[i][j][2])))>args.threshold:
       c.append((bright*tar_color[0]/256,bright*tar_color[1]/256,bright*tar_color[2]/256))
     else:
       c.append((0,0,0))
@@ -108,7 +114,7 @@ for i in range(h):
       if bright<=sort_bright[k][0]:
         c_temp=k
         break
-    if bright>0.00:
+    if bright<=sort_bright[NC-1][0]:
       char.append(sort_bright[c_temp][1])
     else:
       char.append(' ')
