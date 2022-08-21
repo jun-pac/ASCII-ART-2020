@@ -11,7 +11,7 @@ python ASCII.py --image_path SPARC_ext.jpg --output_name SPARC_result --theme_co
 
 You can also enter the following command for more detailed settings:
 ```
-python ASCII.py --image_path SPARC_ext.jpg --bright_path sort_bright.pickle --output_name SPARC_result --output_mode text --theme_color 2 71 254 --output_size 180 120
+python ASCII.py --image_path SPARC_ext.jpg --bright_path sort_bright.pickle --output_name SPARC_result --output_mode text --theme_color 2 71 254 --output_size 180 120 --threshold 0.85
 ```
 
 
@@ -48,8 +48,5 @@ A linear calibration process is applied to the sorted brightness list to shift t
 Finally, the pixels in the image to be converted are compared against the list of calibrated brightnesses to find and place matching ASCII characters.<br/>
 
 See *Garage_ASCII.ipynb* for more detail.
-
-<br/>
-<br/>
-<br/>
+<br/><br/><br/>
 © 2020 jun-pac [skg4078@snu.ac.kr]
