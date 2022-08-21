@@ -4,14 +4,14 @@
 ---
 
 ## How can I use it?
-Specify the image path, output name, theme color and output size and run it. If no argument is provided, the default value is used.<br/>
+Specify the image path, output name, output mode and theme color and run it. If no argument is provided, the default value is used.<br/>
 ```
-python ASCII.py --image_path SPARC_ext.jpg --output_name SPARC_result --theme_color 2 71 254 --output_size 180 120
+python ASCII.py --image_path SPARC_ext.jpg --output_name SPARC_result --output_mode image --theme_color 2 71 254
 ```
 
 You can also enter the following command for more detailed settings:
 ```
-python ASCII.py --image_path SPARC_ext.jpg --bright_path sort_bright.pickle --output_name SPARC_result --output_mode text --theme_color 2 71 254 --output_size 180 120 --threshold 0.85
+python ASCII.py --image_path SPARC_ext.jpg --bright_path sort_bright.pickle --output_name SPARC_result --output_mode image --theme_color 2 71 254 --output_size 180 120 --threshold 0.85
 ```
 
 
