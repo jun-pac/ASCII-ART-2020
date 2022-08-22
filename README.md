@@ -41,7 +41,7 @@ If you want to increase the level at which the theme color is used, set the *thr
 <p align="center">
 <img width="765" alt="image" src="https://user-images.githubusercontent.com/100084401/185803486-5e5a0a4a-37c3-4e65-9be9-6da9fcb40dcf.png">
 </p>
-A linear calibration process is applied to the sorted brightness list to shift the color distribution to match the actual image.<br/>
+A non-linear calibration process is applied to the sorted brightness list to shift the color distribution to match the actual image.<br/>
 <p align="center">
  <img width="800" alt="image" src="https://user-images.githubusercontent.com/100084401/185803549-864fdcda-e916-43b8-ac7e-ee6532b873e3.png">
 </p>
