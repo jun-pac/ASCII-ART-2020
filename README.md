@@ -16,7 +16,7 @@ python ASCII.py --image_path SPARC_ext.jpg --bright_path sort_bright.pickle --ou
 
 
 ### Arguments
-**output_mode** <br/>
+**Output mode** <br/>
 By specifying the *output_mode* argument as 'text' or 'image', you can determine the format of the result. When set to 'text', the result is:
 <p align="center">
 <img width="672" alt="image" src="https://user-images.githubusercontent.com/100084401/185803140-a2388ae6-a880-4830-9660-513a6c845ae5.png">
